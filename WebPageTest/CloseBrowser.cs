@@ -83,13 +83,13 @@ namespace WebPageTest
             //repo.BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusW.Click("12;8");
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusW' at Center.", repo.BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusWInfo, new RecordItemIndex(1));
-            //repo.BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusW.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1890;31.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(2));
-            repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1890;31");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusW' at Center.", repo.BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusWInfo, new RecordItemIndex(1));
+            repo.BBCFoodRecipesAndInspirationFrom.CloseTabCtrlPlusW.Click();
             Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1890;31.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(2));
+            //repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1890;31");
+            //Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'VirginMediaOfficialSiteInternet.ClientCaption' at 1890;31.", repo.VirginMediaOfficialSiteInternet.ClientCaptionInfo, new RecordItemIndex(3));
             //repo.VirginMediaOfficialSiteInternet.ClientCaption.Click("1890;31");

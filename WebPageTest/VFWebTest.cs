@@ -105,9 +105,9 @@ namespace WebPageTest
             Validate.Attribute(repo.Home.GlobeLinkInfo, "InnerText", "globeLink");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=35,Height=30}) on item 'Home.GlobeLink'.", repo.Home.GlobeLinkInfo, new RecordItemIndex(7));
-            Validate.ContainsImage(repo.Home.GlobeLinkInfo, GlobeLink_Screenshot1, GlobeLink_Screenshot1_Options);
-            Delay.Milliseconds(100);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=35,Height=30}) on item 'Home.GlobeLink'.", repo.Home.GlobeLinkInfo, new RecordItemIndex(7));
+            //Validate.ContainsImage(repo.Home.GlobeLinkInfo, GlobeLink_Screenshot1, GlobeLink_Screenshot1_Options);
+            //Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Home.Media' at 78;42.", repo.Home.MediaInfo, new RecordItemIndex(8));
             repo.Home.Media.Click("78;42");
