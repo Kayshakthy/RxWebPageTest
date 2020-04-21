@@ -7,6 +7,11 @@ rxversion="6.1">
 			name="setup"
 			id="0b09fdab-8a27-4eef-a805-b9de1711051a"/>
 			<testmodule
+			name="CloseVFBrowser"
+			id="11213351-4e70-456b-9bd4-5552353da33e"
+			ref="c915582f-900c-423c-b4c2-5272c5dbf512"
+			type="Recording"/>
+			<testmodule
 			name="BBCWebTest"
 			id="1deb5434-b6ab-459c-bdbe-f9c4c0cd354d"
 			ref="e946e514-7bb4-46b5-9bda-0d64b8cbe502"
@@ -41,6 +46,11 @@ rxversion="6.1">
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"/>
+			<testmodule
+			name="VFWebTest"
+			id="534a3435-2599-4ef1-93d5-d202f5ed1e7b"
+			ref="4129fdd6-268a-4ebc-9a92-51d58cb29bc6"
+			type="Recording"/>
 			<testcase
 			name="VMTest"
 			id="5b93d81b-27f2-46cc-b895-88805bc0a08b"
@@ -49,11 +59,9 @@ rxversion="6.1">
 			name="WebPageTest"
 			id="847c97c4-a43d-49d9-9e3e-0ba17264a017"
 			reportlevel="Info;20"/>
-			<testmodule
-			name="CloseBrowser"
-			id="9b7fda8b-870b-477a-8bf4-7536a7846ccf"
-			ref="fbc760ba-8f9d-400a-a9e0-efda82829204"
-			type="Recording"/>
+			<setup
+			name="setup"
+			id="8c100fd9-ee57-40c1-a5ca-3daa4f0128cb"/>
 			<testmodule
 			name="OpenBBCBrowser"
 			id="9e37eb77-ada4-4aa9-ba7e-c923946d9edd"
@@ -63,6 +71,11 @@ rxversion="6.1">
 			name="VMWebTest"
 			id="a61ec553-4aa1-49fc-8582-a15b239f9f4d"
 			ref="2658fb00-181a-446c-99a6-2b4190a53350"
+			type="Recording"/>
+			<testmodule
+			name="CloseBrowser"
+			id="b0f481ae-4728-44a9-8dca-2cdb71e1db08"
+			ref="fbc760ba-8f9d-400a-a9e0-efda82829204"
 			type="Recording"/>
 			<testmodule
 			name="CloseBBCBrowser"
@@ -80,7 +93,32 @@ rxversion="6.1">
 			id="c0696546-ca33-42e6-b9ac-024a47952683"/>
 			<teardown
 			name="teardown"
+			id="cf41fee2-472b-410e-bf18-b86e213fc2c4"/>
+			<teardown
+			name="teardown"
 			id="d6a97062-49d2-43b5-88ec-6141d160a848"/>
+			<testmodule
+			name="OpenBrowser"
+			id="f013479c-903f-413f-bc87-b82eda11d69f"
+			ref="00b44ec5-ec13-47b0-ab53-fa172ccf5e55"
+			type="Recording">
+				<databinding>
+					<var
+					variablename="browsername"
+					variableid="5e1adcb2-82d2-4451-a3d2-826cd0c7e2bc"
+					dataname="browserName"
+					datasourceid="630f1259-ed45-4a88-9b84-ed2a8035f322"/>
+					<var
+					variablename="webpageurl"
+					variableid="1ccc0aa4-a783-4990-9594-d1aa4736f69b"
+					dataname="webPageURL"
+					datasourceid="630f1259-ed45-4a88-9b84-ed2a8035f322"/>
+				</databinding>
+			</testmodule>
+			<testcase
+			name="VFTest"
+			id="fda76b29-71a8-4cd9-9d9b-4c6f753ca3d6"
+			datasource="VMWebTest"/>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -118,7 +156,7 @@ rxversion="6.1">
 						id="bde7bf2f-5d86-4af4-a485-ad487fef0e36">
 							<testmodule
 							name="OpenBrowser"
-							id="22441bf1-08e1-4061-bc18-ed4ddcd021b0"/>
+							id="f013479c-903f-413f-bc87-b82eda11d69f"/>
 						</setup>
 						<testmodule
 						name="VMWebTest"
@@ -128,7 +166,28 @@ rxversion="6.1">
 						id="c0696546-ca33-42e6-b9ac-024a47952683">
 							<testmodule
 							name="CloseBrowser"
-							id="9b7fda8b-870b-477a-8bf4-7536a7846ccf"/>
+							id="b0f481ae-4728-44a9-8dca-2cdb71e1db08"/>
+						</teardown>
+					</testcase>
+					<testcase
+					name="VFTest"
+					id="fda76b29-71a8-4cd9-9d9b-4c6f753ca3d6">
+						<setup
+						name="setup"
+						id="8c100fd9-ee57-40c1-a5ca-3daa4f0128cb">
+							<testmodule
+							name="OpenBrowser"
+							id="22441bf1-08e1-4061-bc18-ed4ddcd021b0"/>
+						</setup>
+						<testmodule
+						name="VFWebTest"
+						id="534a3435-2599-4ef1-93d5-d202f5ed1e7b"/>
+						<teardown
+						name="teardown"
+						id="cf41fee2-472b-410e-bf18-b86e213fc2c4">
+							<testmodule
+							name="CloseVFBrowser"
+							id="11213351-4e70-456b-9bd4-5552353da33e"/>
 						</teardown>
 					</testcase>
 				</testcase>
@@ -155,6 +214,9 @@ rxversion="6.1">
 				<column>
 					webPageURL
 				</column>
+				<column>
+					VFURL
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns/>
 		</DataSource>
@@ -169,6 +231,8 @@ rxversion="6.1">
 			id="847c97c4-a43d-49d9-9e3e-0ba17264a017"/>
 			<testcase
 			id="b51a6abc-86bb-4311-a88b-4b03b63229f4"/>
+			<testcase
+			id="fda76b29-71a8-4cd9-9d9b-4c6f753ca3d6"/>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun1">
@@ -178,7 +242,23 @@ rxversion="6.1">
 			id="b51a6abc-86bb-4311-a88b-4b03b63229f4"/>
 		</testconfiguration>
 		<testconfiguration
-		name="TestRun2"/>
+		name="TestRun2">
+			<testcase
+			id="5b93d81b-27f2-46cc-b895-88805bc0a08b"/>
+			<testcase
+			id="847c97c4-a43d-49d9-9e3e-0ba17264a017"/>
+			<testcase
+			id="b51a6abc-86bb-4311-a88b-4b03b63229f4"/>
+			<testcase
+			id="fda76b29-71a8-4cd9-9d9b-4c6f753ca3d6"/>
+		</testconfiguration>
+		<testconfiguration
+		name="TestRun3">
+			<testcase
+			id="847c97c4-a43d-49d9-9e3e-0ba17264a017"/>
+			<testcase
+			id="fda76b29-71a8-4cd9-9d9b-4c6f753ca3d6"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references/>
 </testsuitedoc>

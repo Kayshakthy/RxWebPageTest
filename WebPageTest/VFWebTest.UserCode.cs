@@ -21,7 +21,7 @@ using Ranorex.Core.Testing;
 
 namespace WebPageTest
 {
-    public partial class CloseBrowser
+    public partial class VFWebTest
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -32,8 +32,15 @@ namespace WebPageTest
             // Your recording specific initialization code goes here.
         }
 
-        public void NavigateVM()
+        public void NavigateVFPage()
         {
+        	 Ranorex.WebDocument doc = Host.Local.FindSingle("/dom[@domain='www.virginmedia.com']");
+        	
+        	//Ranorex.WebDocument doc= Host.Local.FindSingle("/dom[@childIndex='1']");
+        	//doc.Navigate("http://www.twitter.com" class="postlink">http://www.twitter.com");  
+        	 doc.Navigate("https://www.vodafone.com/",true);
+        	 Delay.Seconds(10);
+        	          
         }
 
     }

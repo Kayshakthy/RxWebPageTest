@@ -150,7 +150,7 @@ e3iyvyDr/SigD//Z
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
-		enabled="False"
+		enabled="True"
 		optional="False"
 		duration="500ms"
 		searchpropertyid="98eecd23-11bb-491f-a189-0fc9a80e0365"
@@ -390,7 +390,7 @@ v+nv/wAh/wD16ADQ/wDjwb/rqf5LWhUVrY/YIPK8zzMsWztx2A/pUtIQqffH1ooT74+tFAH/2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<mouseitem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		duration="500ms"
 		searchpropertyid="ce5ce50d-c8a3-4337-b1c5-b36a96c1135a"

@@ -91,6 +91,18 @@
       <UserCode>true</UserCode>
       <id>c072f39d-e519-4bc9-8852-882378ec76c5</id>
     </Compile>
+    <Compile Include="CloseVFBrowser.cs">
+      <BoundTo>4a83fc6a-0cb0-4f7a-965f-bc20f5efb10e</BoundTo>
+      <DependentUpon>CloseVFBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3763506-8693-4fd2-9910-ba060f6cf787</id>
+    </Compile>
+    <Compile Include="CloseVFBrowser.UserCode.cs">
+      <BoundTo>4a83fc6a-0cb0-4f7a-965f-bc20f5efb10e</BoundTo>
+      <DependentUpon>CloseVFBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5ca08138-d099-416f-8837-3d2e3c63854f</id>
+    </Compile>
     <Compile Include="OpenBBCBrowser.cs">
       <BoundTo>837acc43-dde0-48b9-9780-4d5d8d10dd57</BoundTo>
       <DependentUpon>OpenBBCBrowser.rxrec</DependentUpon>
@@ -130,6 +142,18 @@
       <UserCode>true</UserCode>
       <id>4750f9be-6b05-4ca4-b2e3-ee971c698884</id>
     </Compile>
+    <Compile Include="VFWebTest.cs">
+      <BoundTo>178a4765-d0b0-4dbe-80ee-5efed3fc4e31</BoundTo>
+      <DependentUpon>VFWebTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4334ae1d-42db-4c68-90e7-ebe252d5c71d</id>
+    </Compile>
+    <Compile Include="VFWebTest.UserCode.cs">
+      <BoundTo>178a4765-d0b0-4dbe-80ee-5efed3fc4e31</BoundTo>
+      <DependentUpon>VFWebTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b2c9416-dfa9-4cea-a1a9-1b993e66abdd</id>
+    </Compile>
     <Compile Include="VMWebTest.cs">
       <BoundTo>39a1b3b1-a460-4bd8-92f9-2a758f5d3254</BoundTo>
       <DependentUpon>VMWebTest.rxrec</DependentUpon>
@@ -168,6 +192,11 @@
       <id>6634a3fb-80ad-48a6-8fde-944d6f9dee93</id>
       <recordtableid>fbc760ba-8f9d-400a-a9e0-efda82829204</recordtableid>
     </None>
+    <None Include="CloseVFBrowser.rxrec">
+      <BoundTo>76aadb92-0a17-46be-9a73-3b98ded10a24</BoundTo>
+      <id>4a83fc6a-0cb0-4f7a-965f-bc20f5efb10e</id>
+      <recordtableid>c915582f-900c-423c-b4c2-5272c5dbf512</recordtableid>
+    </None>
     <None Include="OpenBBCBrowser.rxrec">
       <BoundTo>76aadb92-0a17-46be-9a73-3b98ded10a24</BoundTo>
       <id>837acc43-dde0-48b9-9780-4d5d8d10dd57</id>
@@ -177,6 +206,11 @@
       <BoundTo>76aadb92-0a17-46be-9a73-3b98ded10a24</BoundTo>
       <id>23852bd3-8f6e-44b5-9bd7-ccd000116dd3</id>
       <recordtableid>00b44ec5-ec13-47b0-ab53-fa172ccf5e55</recordtableid>
+    </None>
+    <None Include="VFWebTest.rxrec">
+      <BoundTo>76aadb92-0a17-46be-9a73-3b98ded10a24</BoundTo>
+      <id>178a4765-d0b0-4dbe-80ee-5efed3fc4e31</id>
+      <recordtableid>4129fdd6-268a-4ebc-9a92-51d58cb29bc6</recordtableid>
     </None>
     <None Include="VMWebTest.rxrec">
       <BoundTo>76aadb92-0a17-46be-9a73-3b98ded10a24</BoundTo>

@@ -21,7 +21,7 @@ using Ranorex.Core.Testing;
 
 namespace WebPageTest
 {
-    public partial class CloseBrowser
+    public partial class CloseVFBrowser
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -30,10 +30,6 @@ namespace WebPageTest
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void NavigateVM()
-        {
         }
 
     }

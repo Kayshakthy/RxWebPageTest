@@ -33,6 +33,10 @@ namespace WebPageTest
         WebPageTestRepositoryFolders.VirginMediaOfficialSiteAppFolder _virginmediaofficialsite;
         WebPageTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder _virginmediamyvirginmedia;
         WebPageTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder _virginmediaofficialsiteinternet;
+        WebPageTestRepositoryFolders.HomeAppFolder _home;
+        WebPageTestRepositoryFolders.MSNUKLatestNewsWeatherHotmailSiAppFolder _msnuklatestnewsweatherhotmailsi;
+        WebPageTestRepositoryFolders.IexploreAppFolder _iexplore;
+        WebPageTestRepositoryFolders.NewsAndMediaInternetExplorerAppFolder _newsandmediainternetexplorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the WebPageTestRepository element repository.
@@ -55,6 +59,10 @@ namespace WebPageTest
             _virginmediaofficialsite = new WebPageTestRepositoryFolders.VirginMediaOfficialSiteAppFolder(this);
             _virginmediamyvirginmedia = new WebPageTestRepositoryFolders.VirginMediaMyVirginMediaAppFolder(this);
             _virginmediaofficialsiteinternet = new WebPageTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder(this);
+            _home = new WebPageTestRepositoryFolders.HomeAppFolder(this);
+            _msnuklatestnewsweatherhotmailsi = new WebPageTestRepositoryFolders.MSNUKLatestNewsWeatherHotmailSiAppFolder(this);
+            _iexplore = new WebPageTestRepositoryFolders.IexploreAppFolder(this);
+            _newsandmediainternetexplorer = new WebPageTestRepositoryFolders.NewsAndMediaInternetExplorerAppFolder(this);
         }
 
 #region Variables
@@ -125,6 +133,42 @@ namespace WebPageTest
         public virtual WebPageTestRepositoryFolders.VirginMediaOfficialSiteInternetAppFolder VirginMediaOfficialSiteInternet
         {
             get { return _virginmediaofficialsiteinternet; }
+        }
+
+        /// <summary>
+        /// The Home folder.
+        /// </summary>
+        [RepositoryFolder("fd9ced3b-577b-4e71-8ef6-7639b8e84a0f")]
+        public virtual WebPageTestRepositoryFolders.HomeAppFolder Home
+        {
+            get { return _home; }
+        }
+
+        /// <summary>
+        /// The MSNUKLatestNewsWeatherHotmailSi folder.
+        /// </summary>
+        [RepositoryFolder("a76ba1e5-4674-40b2-a03c-65b0df3ed249")]
+        public virtual WebPageTestRepositoryFolders.MSNUKLatestNewsWeatherHotmailSiAppFolder MSNUKLatestNewsWeatherHotmailSi
+        {
+            get { return _msnuklatestnewsweatherhotmailsi; }
+        }
+
+        /// <summary>
+        /// The Iexplore folder.
+        /// </summary>
+        [RepositoryFolder("8990f94e-f56e-4b7a-86e8-07f4baf3852c")]
+        public virtual WebPageTestRepositoryFolders.IexploreAppFolder Iexplore
+        {
+            get { return _iexplore; }
+        }
+
+        /// <summary>
+        /// The NewsAndMediaInternetExplorer folder.
+        /// </summary>
+        [RepositoryFolder("0deff639-fe53-45d7-ad9a-56550a9de26e")]
+        public virtual WebPageTestRepositoryFolders.NewsAndMediaInternetExplorerAppFolder NewsAndMediaInternetExplorer
+        {
+            get { return _newsandmediainternetexplorer; }
         }
     }
 
@@ -808,6 +852,357 @@ namespace WebPageTest
             /// The ClientCaption item info.
             /// </summary>
             [RepositoryItemInfo("2dab4340-f275-4e94-a303-48c81debeec3")]
+            public virtual RepoItemInfo ClientCaptionInfo
+            {
+                get
+                {
+                    return _clientcaptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HomeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("fd9ced3b-577b-4e71-8ef6-7639b8e84a0f")]
+        public partial class HomeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _aboutInfo;
+            RepoItemInfo _careersInfo;
+            GlobeLinkInfoClass _globelinkInfo;
+            RepoItemInfo _mediaInfo;
+
+            /// <summary>
+            /// Creates a new Home  folder.
+            /// </summary>
+            public HomeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Home", "/dom[@domain='www.vodafone.com']", parentFolder, 30000, null, false, "fd9ced3b-577b-4e71-8ef6-7639b8e84a0f", "")
+            {
+                _aboutInfo = new RepoItemInfo(this, "About", ".//div[#'231425027']/ul/?/?/a[@innertext='About  ']", 30000, null, "a9c7a82a-d284-4e56-af83-ad2b152d1390");
+                _careersInfo = new RepoItemInfo(this, "Careers", ".//div[#'231425027']/ul/?/?/a[@innertext='Careers  ']", 30000, null, "6c8b01b9-13ef-4b35-8cf2-5a6cda444911");
+                _globelinkInfo = new GlobeLinkInfoClass(this);
+                _mediaInfo = new RepoItemInfo(this, "Media", ".//div[#'231425027']/ul/?/?/a[@innertext='Media  ']", 30000, null, "e6312710-21e6-451a-a2ea-c31ca1af42fa");
+            }
+
+            /// <summary>
+            /// The GlobeLinkInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("be1795ef-1b2e-4403-9e16-4eb4c9ecf594")]
+            public class GlobeLinkInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// GlobeLinkInfoClass class constructor.
+                /// </summary>
+                public GlobeLinkInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "GlobeLink", ".//div[#'1075833878']/div/div[3]/?/?/div/?/?/a[@innertext='globeLink']", 30000, null, "be1795ef-1b2e-4403-9e16-4eb4c9ecf594")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("aad09869-3e60-458a-a61d-a349b0875d32")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("aad09869-3e60-458a-a61d-a349b0875d32");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("aad09869-3e60-458a-a61d-a349b0875d32")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("aad09869-3e60-458a-a61d-a349b0875d32", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("fd9ced3b-577b-4e71-8ef6-7639b8e84a0f")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fd9ced3b-577b-4e71-8ef6-7639b8e84a0f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The About item.
+            /// </summary>
+            [RepositoryItem("a9c7a82a-d284-4e56-af83-ad2b152d1390")]
+            public virtual Ranorex.ATag About
+            {
+                get
+                {
+                    return _aboutInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The About item info.
+            /// </summary>
+            [RepositoryItemInfo("a9c7a82a-d284-4e56-af83-ad2b152d1390")]
+            public virtual RepoItemInfo AboutInfo
+            {
+                get
+                {
+                    return _aboutInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Careers item.
+            /// </summary>
+            [RepositoryItem("6c8b01b9-13ef-4b35-8cf2-5a6cda444911")]
+            public virtual Ranorex.ATag Careers
+            {
+                get
+                {
+                    return _careersInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Careers item info.
+            /// </summary>
+            [RepositoryItemInfo("6c8b01b9-13ef-4b35-8cf2-5a6cda444911")]
+            public virtual RepoItemInfo CareersInfo
+            {
+                get
+                {
+                    return _careersInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GlobeLink item.
+            /// </summary>
+            [RepositoryItem("be1795ef-1b2e-4403-9e16-4eb4c9ecf594")]
+            public virtual Ranorex.ATag GlobeLink
+            {
+                get
+                {
+                    return _globelinkInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GlobeLink item info.
+            /// </summary>
+            [RepositoryItemInfo("be1795ef-1b2e-4403-9e16-4eb4c9ecf594")]
+            public virtual GlobeLinkInfoClass GlobeLinkInfo
+            {
+                get
+                {
+                    return _globelinkInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Media item.
+            /// </summary>
+            [RepositoryItem("e6312710-21e6-451a-a2ea-c31ca1af42fa")]
+            public virtual Ranorex.ATag Media
+            {
+                get
+                {
+                    return _mediaInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Media item info.
+            /// </summary>
+            [RepositoryItemInfo("e6312710-21e6-451a-a2ea-c31ca1af42fa")]
+            public virtual RepoItemInfo MediaInfo
+            {
+                get
+                {
+                    return _mediaInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MSNUKLatestNewsWeatherHotmailSiAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a76ba1e5-4674-40b2-a03c-65b0df3ed249")]
+        public partial class MSNUKLatestNewsWeatherHotmailSiAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientcaptionInfo;
+
+            /// <summary>
+            /// Creates a new MSNUKLatestNewsWeatherHotmailSi  folder.
+            /// </summary>
+            public MSNUKLatestNewsWeatherHotmailSiAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("MSNUKLatestNewsWeatherHotmailSi", "/form[@title~'^MSN\\ UK:\\ Latest\\ news,\\ weat']", parentFolder, 30000, null, true, "a76ba1e5-4674-40b2-a03c-65b0df3ed249", "")
+            {
+                _clientcaptionInfo = new RepoItemInfo(this, "ClientCaption", "element[@class='Client Caption']", 30000, null, "f37e2cca-9439-4d4e-9a45-e2b99c7b7296");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a76ba1e5-4674-40b2-a03c-65b0df3ed249")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a76ba1e5-4674-40b2-a03c-65b0df3ed249")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item.
+            /// </summary>
+            [RepositoryItem("f37e2cca-9439-4d4e-9a45-e2b99c7b7296")]
+            public virtual Ranorex.Unknown ClientCaption
+            {
+                get
+                {
+                    return _clientcaptionInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item info.
+            /// </summary>
+            [RepositoryItemInfo("f37e2cca-9439-4d4e-9a45-e2b99c7b7296")]
+            public virtual RepoItemInfo ClientCaptionInfo
+            {
+                get
+                {
+                    return _clientcaptionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The IexploreAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8990f94e-f56e-4b7a-86e8-07f4baf3852c")]
+        public partial class IexploreAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new Iexplore  folder.
+            /// </summary>
+            public IexploreAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Iexplore", "/contextmenu[@processname='iexplore']", parentFolder, 30000, null, false, "8990f94e-f56e-4b7a-86e8-07f4baf3852c", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8990f94e-f56e-4b7a-86e8-07f4baf3852c")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8990f94e-f56e-4b7a-86e8-07f4baf3852c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The NewsAndMediaInternetExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0deff639-fe53-45d7-ad9a-56550a9de26e")]
+        public partial class NewsAndMediaInternetExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _clientcaptionInfo;
+
+            /// <summary>
+            /// Creates a new NewsAndMediaInternetExplorer  folder.
+            /// </summary>
+            public NewsAndMediaInternetExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NewsAndMediaInternetExplorer", "/form[@title~'^News\\ and\\ Media\\ -\\ Internet']", parentFolder, 30000, null, true, "0deff639-fe53-45d7-ad9a-56550a9de26e", "")
+            {
+                _clientcaptionInfo = new RepoItemInfo(this, "ClientCaption", "element[@class='Client Caption']", 30000, null, "da2559ce-12df-4403-8a9e-d89c8c84743a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0deff639-fe53-45d7-ad9a-56550a9de26e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0deff639-fe53-45d7-ad9a-56550a9de26e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item.
+            /// </summary>
+            [RepositoryItem("da2559ce-12df-4403-8a9e-d89c8c84743a")]
+            public virtual Ranorex.Unknown ClientCaption
+            {
+                get
+                {
+                    return _clientcaptionInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ClientCaption item info.
+            /// </summary>
+            [RepositoryItemInfo("da2559ce-12df-4403-8a9e-d89c8c84743a")]
             public virtual RepoItemInfo ClientCaptionInfo
             {
                 get
