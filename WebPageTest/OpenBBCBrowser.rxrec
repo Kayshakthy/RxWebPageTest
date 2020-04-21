@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="63b6720a-9720-49cb-be9b-6061c71aec66"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		OpenBBCBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBBCBrowser"
+	namespace="WebPageTest"/>
+	<variables/>
+	<recorditems>
+		<openwebsiterecorditem
+		enabled="True"
+		optional="False"
+		browser="IE"
+		args=""
+		maximized="False"
+		incognito="False"
+		clearcache="False">
+			<comment/>
+			<bindings/>
+			<url>
+				http://www.bbc.co.uk
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	name="WebPageTestRepository"
+	id="9b12c0e6-0d54-4b6c-b4bb-cf4a6523cd68"
+	rxversion="6.1"
+	relativepath="WebPageTestRepository.rxrep">
+		<codegen
+		classname="WebPageTestRepository"
+		namespace="WebPageTest"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="44a44dba-0d21-424d-9680-11f589ae788d"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBBCBrowser.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

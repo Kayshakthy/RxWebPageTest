@@ -1,0 +1,528 @@
+﻿<repository
+name="WebPageTestRepository"
+id="9b12c0e6-0d54-4b6c-b4bb-cf4a6523cd68"
+rxversion="6.1">
+	<codegen
+	classname="WebPageTestRepository"
+	namespace="WebPageTest"/>
+	<rootfolder
+	name="Root"
+	id="44a44dba-0d21-424d-9680-11f589ae788d"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="BBCHome"
+		id="515c24d7-486d-4277-a601-c02eb642507d"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='www.bbc.co.uk']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="Homepage"
+			id="2e89688c-f72e-4057-af0b-26f80e1ba1b1"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.bbc.co.uk']//div[#'orb-header']/div[1]/div[1]/a[@innertext='Homepage']"
+			addcaps="unknown,webelement,atag"
+			refimgid="c4b43be7-ad45-4539-acc8-ec071785c4f4">
+				<image
+				name="Screenshot1"
+				guid="72a065de-7812-4c5a-9d99-b3b4082dabcf">
+					iVBORw0KGgoAAAANSUhEUgAAAGkAAAAeCAYAAAAvpTBDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAA2tJREFUaEPtmNFNHDEQhq+PiAIiGoAGIgqIeI4IDYS38BIKCBWEBqCB
+UMFVcBWECq6Cjb4VE6zJrD02Y9897C/9Enfrtcfz2WMfm2nV0Wtzfn42HcKXl59fQ3jT8/Nvs+0o
+M74WcVptR/j29vscw+bk5MN0CBOEFkmy2o7y09PjayRvurj4ZLYd4aurL3MMK6TEKyTlFVLZLkjX
+11/nxC354eHXdH//c0649X7OrZB0DKlJMvEQt/VuyRGQmNfd3Y9pu91Ou91u2u/3/8x3jMFzT85c
+kOjMK5JUA6sVUo2I3+pjye+BxAUDKDUCGovK6g+HQ0KsFu+kRkBC7HarH8stkE5PP85jMPdWLe38
+JkiyXTF/W4G9vPwx+9KOgMT4Eo/EZMlb/uhDKwcJQMRsiV1FfwAkj+wYPlu7LRTSzc23/9pYv3c8
+ZS8CkrUgSJyG5ekX10KyAAHBs/vILfGj7pCwnhzvWe1S94KESUIq7+6ugaRzg9g1jG21XzL9sNCt
+Z6GQCC6Vp7z0hKT7ZnVb7bS9kAAhu0CUuwC0OhSSLi+HLHeYRZIqutzp/pl/7Q7yOAQSgeld5E1I
+D0jEQwLTCw1/L5UTbS8k3c5TOVrcBIkJUzqwdbOrWVERkJDEY8XE56Xdb9kLSZc6T+VocROknEgI
+7a1+LEdByolFU5NAL6RUSyU3wuGQRARtTUx7BCQRJdnqS7sFEotTP49yEySSyIRT60uDqAQqAhIJ
+0vGQaEqflqdvLyRdVntcGnDIxSE1V9BUpTIQASk3BsnVySwd8F5IehEc1cWhdAjXHKi9IWHiTQUE
+q53YC0kvSE/cLe4CSU8y134EJD0GO8BqJ/ZCorxp9dhNQ3ZSLvARkBg/VRQkzPmn5f09JpbfdeTZ
+eh4KicF00JwHhyx3JEwvmtK/bmogYeuCQh5y88bki1zK+7xjtWuCxE2ODlPznT6g0dLA4ghI1u2O
+Pqzk0TaXcFwLiWRbYyHJFTAwueQz7XW++N7qvwmSVwTCBKw+xRGQvCIppVKNayHhHCivhkIiGbxT
+AoRHQWJFlxItboEkZt66vJZEvijBS2O4IHGoMcmcSaxsaw8ccSskKwZt+slNfsnvgSQmZ+SDOLSA
+wq7jOWdmKV8uSD3dCqmnIyBZrlm8qVdIhntBavUKyfBxQpqmv6rgMwEjEv/FAAAAAElFTkSuQmCC
+				</image>
+				/dom[@domain='www.bbc.co.uk']//div[#'orb-header']//a[@innertext='Homepage']
+			</item>
+			<item
+			name="WelcomeToTheBBC"
+			id="32e8816d-bb7e-40fb-be14-2f4ffc2e5819"
+			searchtimeout="30000ms"
+			capname="h2tag"
+			refpath="/dom[@domain='www.bbc.co.uk']//div[#'orb-modules']/div[2]/section[1]/div/h2[@innertext='Welcome to the BBC']"
+			addcaps="unknown,webelement,h2tag"
+			refimgid="bec06f3d-e507-4e6a-8090-e17a408a983a">
+				/dom[@domain='www.bbc.co.uk']//div[#'orb-modules']/div[2]/section[1]/?/?/h2[@innertext='Welcome to the BBC']
+			</item>
+			<item
+			name="More"
+			id="b5948d5f-e077-45c4-ba44-f94a836c4967"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.bbc.co.uk']//li[#'orb-nav-more']/a[@innertext='More']"
+			addcaps="unknown,webelement,atag"
+			refimgid="175ce4a2-94ad-46a3-8882-a9c9e777e621">
+				/dom[@domain='www.bbc.co.uk']//li[#'orb-nav-more']/a[@innertext='More']
+			</item>
+			<item
+			name="OrbPanelMoreTitle"
+			id="ba9cff5b-5184-4ce8-a22e-cd1165b65e99"
+			searchtimeout="30000ms"
+			capname="h2tag"
+			refpath="/dom[@domain='www.bbc.co.uk']//h2[#'orb-panel-more-title']"
+			addcaps="unknown,webelement,h2tag"
+			refimgid="9de1bd09-d3bc-4ab8-8d41-82f1535c5143">
+				<image
+				name="Screenshot1"
+				guid="d2b38f80-de9d-4c96-8217-fa2fa4fed50a">
+					iVBORw0KGgoAAAANSUhEUgAAAGYAAAApCAYAAADH0VzbAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAABMtJREFUeF7tmj+IIkkUxjvryLCjw8jAYDG4RAYMFqNl4AJNNjiQC8yE
+AxODwcRkIpMRDgwajBwwukRwjwkEExkZWHYCGVxkF5Y55vbABScROvnu9U63XdX2n+qeU2uH/uAF
+Y1dVV79fva73qkdBIimVgJFUCRhJlYCRVAkYSZWAkVQJGEmVgJFUCRhJlYCRVFswS70ARVG2plZH
+WFvXYsmYoZV2xlOUAvSldU1IBh6/fMCfFzWU81lkNJUZK4WfsnmUaxe4vP6IR8PqIqhxnZ2Xv6la
+Btl8GbWLS1x/fKQZhWkJveA9lqjVx08j+YKJ7khe61EVaszxNp/e4ey15uofYKkT/N6/wVdBQKJg
+3JY6OcPVl6CbHASMAq05FVglXpqjk+PHEgOzwbz/Fmmun7ilTs4xXVlDBSgumO+m/oyW700OBEZR
+TtG/txpE0Hpch7YzVhiYFd63i64oUZH55ZxeV3d4+Lax2pE23/Bwd43L8zJepdj2ZOk6xiFwODC2
+J9wyHvHvwx2uL89RfpXi76GWMPD0iwuM39gCCgGjIN2aRYwav1UTDGY1rPBQUm/Qufkafu/NHP23
+aeY+tDcUdSwCOgqB4bS7aLzfJvsGo2nOivddHd4ypk2nLztOEJjVEBXVbkemFqEHeXZHK3I2C0dF
+KWDS0cGYukf/lOmntTCzrjjaN5hCG3pd2/6da98KRg07eQ3NfhcFe8wAMPNOzmrz1K92JbBRuOXO
+ArUmpj6TjgcG+GdQcvopRfQ+Wxe22jsYHcul7jhVrWAo4CsuWtxj+IIhh2p2G7LTPuGNJz4TVFEd
+eSf8ccFQR6ef5/McAgxVMaOqUzuER809BiW7vUbZBTlFBMysxSUKleEzqidjjDrzSlTJMV5z/rEj
+xvxx3kHO/i0kagxy8DbNtfsLgPncK1rXTfN62ChaY1ixxyLLtnFrXWEVd49xFh7ZcfYYy7H0oGOh
+vcYjWkwJgJk0mIdVG5hYv8fVopt3xlModbZ+ZxUdDNVXXT4ry3Xm1jVWLjCRjJ9rCBiSwF7jGS2m
+BMBwTmL7xhT3HCL39AOzrWMu8NuJq47xrZUOCSY0anyixdSPACaqUX3V803lDwqGFBA1XCbmzqhe
+FBgVmV913AQeyB1sj7FlYNp0osY5DWDrljRaM9ekBcAcfY8Rstf44445EvLVwcGQ7gco2amodRrA
+nomppQEfLaYEwOw1K8t3sbCusOLA+DmPfV4yrXaF8FLuGGAoRm7bToWuNfvobieRQ/vWI8QFwNCg
+yG7byFXHLGnROJmYyInEUcCQ1iNU2TMty9TK0Hs1iYDZY+VfH3vvB6JgTEf3imztUkMwm2OBIXHt
+vpufw0lCYPZ0VpamAtCbSwQwNOyCPe+j/bUxoRemn44Ixu2AwI9pgmBos0KdjRqpTpf5V7iZ5DQm
+fmiOCSaKRMGQVpRIcF8un/U9phc4/2hgSOsJGkLR+ALBmCtzoT//C6aaafw/XzBdWl3VuMNW7+Op
+FwnG1DO/+b/p4L3A9hQHDH/CQUav297O87jAxLKn2ksyME+K818yZ+8+EVYxxQOzmwjs1m4vHIyt
+zd8f8Jd+tt//K4v0ujEwa7H7mTuD3AOYRHIpASOpEjCSKgEjqRIwkioBI6WA/wAlk6WYDVMIoAAA
+AABJRU5ErkJggg==
+				</image>
+				/dom[@domain='www.bbc.co.uk']//h2[#'orb-panel-more-title']
+			</item>
+			<item
+			name="Food"
+			id="804793a7-f8a0-44ec-9281-7b52e44590a1"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.bbc.co.uk']//div[#'orb-panel-more']/div/ul/li[9]/a[@innertext='Food']"
+			addcaps="unknown,webelement,atag"
+			refimgid="55488be2-a60f-46f2-a436-a03ad469799c">
+				/dom[@domain='www.bbc.co.uk']//div[#'orb-panel-more']/?/?/ul/?/?/a[@innertext='Food']
+			</item>
+			<item
+			name="FoodHomepage"
+			id="da77b69c-631e-4db9-bf27-7ff8d5a50670"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.bbc.co.uk']//div[#'main-content']/div[1]/div[1]/div/a[@innertext='Food']"
+			addcaps="unknown,webelement,atag"
+			refimgid="50dece6e-ae04-4058-904a-cfc47fe7c2a3">
+				/dom[@domain='www.bbc.co.uk']//div[#'main-content']/div[1]/div[1]/?/?/a[@innertext='Food']
+			</item>
+			<basepath>
+				/dom[@domain='www.bbc.co.uk']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="BBCFoodRecipesAndInspirationFrom"
+		id="bea5241c-f54c-4083-b88a-a74c65da4c9e"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='BBC Food - Recipes and inspiration from your favourite BBC programmes and chefs - Internet Explorer']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="CloseTabCtrlPlusW"
+			id="4776427b-6862-4dd1-9d3d-6125462fa87e"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title~'^BBC\ Food\ -\ Recipes\ and\ in']/element[@class='WorkerW']/container/container/container/tabpagelist/tabpage/button[@accessiblename='Close Tab (Ctrl+W)']"
+			addcaps="button,accessible"
+			refimgid="36ff563e-10e1-492b-9eff-2c180663d5d7">
+				/form[@title~'^BBC\ Food\ -\ Recipes\ and\ in']//container[@class='TabBandClass']/?/?/tabpagelist[@accessiblename='Tab Row']/tabpage[@accessiblename~'^BBC\ Food\ -\ Recipes\ and\ in']/button[@accessiblename='Close Tab (Ctrl+W)']
+			</item>
+			<basepath>
+				/form[@title~'^BBC\ Food\ -\ Recipes\ and\ in']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="BBCHomeInternetExplorer"
+		id="a21a7dd7-f98d-49f8-9115-d00edc2b3179"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='BBC - Home - Internet Explorer']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ClientCaption"
+			id="6c4318d2-5b8c-4b17-9c58-eea8655f78b6"
+			searchtimeout="30000ms"
+			capname="unknown"
+			refpath="/form[@title~'^BBC\ -\ Home\ -\ Internet\ Exp']/element[@class='Client Caption']"
+			addcaps="unknown,nativewindow"
+			refimgid="771d57c1-051a-4e01-8d3a-7c288853a1a2">
+				/form[@title~'^BBC\ -\ Home\ -\ Internet\ Exp']/element[@class='Client Caption']
+			</item>
+			<basepath>
+				/form[@title~'^BBC\ -\ Home\ -\ Internet\ Exp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="VirginMediaOfficialSite"
+		id="0bc1a895-3a19-4ef8-b490-ad6d584490b7"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='www.virginmedia.com']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="ConsentPromptSubmit"
+			id="0b2b06f7-0883-4b8f-92da-04ce523e792f"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.virginmedia.com']//a[#'consent_prompt_submit']"
+			addcaps="unknown,webelement,atag"
+			refimgid="b56134e1-8a82-420b-97d7-5222c343824b">
+				/dom[@domain='www.virginmedia.com']//a[#'consent_prompt_submit']
+			</item>
+			<item
+			name="VirginMedia"
+			id="5fc735ee-588e-4f41-bfda-644bc60b6c75"
+			searchtimeout="30000ms"
+			capname="imgtag"
+			refpath="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[1]/a[@href='https://www.virginmedia.com/']/tag[@tagname='picture']/img[@alt='Virgin Media']"
+			addcaps="unknown,webelement,imgtag"
+			refimgid="3b34e39a-f70b-4446-a227-33f2841e983a">
+				<image
+				name="Screenshot1"
+				guid="06972e43-9de8-4b3c-b04c-d890793bfc6d">
+					iVBORw0KGgoAAAANSUhEUgAAAIUAAABSCAYAAAB64RerAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAH6RJREFUeF7t3Xm8ZFdRB/A7k0ySSSYzk9kzmckkk5AIAoYIihIFFFEQ
+VEAUVFAUVFTEDVRQlEVQlMV9Y1HZBFRQFBdwX3BBRcEFRUFFxR1UUBS81vf01MtNc7r7dvft996E
+/qM+k/f6LufU+dWvflXn9Etz/VXXt2tbW9fWoFjb+9jgoPjQ07drP+HyD2y/5NhV7TMOXta+bO+h
+9tcu3Nu+4fwL27/adX77z+fs2rB/OHdX+d0fxWe/Edf85MUH2u+75NL2sUevaB904tr2zld+UHuH
+q25Xfc/aVmeDgOLDT1/X3u/krdrHxGI+55Jj7S9ctL8s9F+ed0H79+ee1/7rOee2/77znPZdO3e2
+796xY8P+e8fO9l1h/xGfuSZB8qdx72t372l/KkDyvQGSrzp6ZfspJ2/Z3unK69rbV96/tmFtKVDc
+JSJZRH/D4cvbHwtGsJB/GyCw+G3TbNj/BgDeGb/7t1j4fwqG+Lu4Blj+MUDgd/8ZoPifuOb/Ove8
+p9lRgAQkv7P74vblFx9svzWY50uDgT45APgR8e7amNa2vC0EijucSREi+KV7D7d/ft7ujUV9bxgA
+iPq/CKb4wwsuan89UsMr9xxoXxLXvmDfkfbZwSYY5fn7j7Q/EmCSNn71wn3t712wJ1hid/s3AQTM
+gUk8D0g83zOlmefsP1be/anBHh91xW3XKWZgmwsUHxwmVQDEdx+4tP2zDhjec4YNRL/FffG+w+1T
+Dp1sP//4Ldr7RmRbPHojF1Aa+JD42fNoh/tcfqv2sy+7pqQgKeOVAZQ/jjQCCNLLuwMgySSY568D
+OK8I9vjKAMe9Tt26pBZgHR/z2ua3uUCBsh9+/OoS1W+PSAaEjOK3RTr48Vikxx65ooDghlikD4sF
+TyAAVO2Zfs9cAyR3DLtT3PeR8S7PsejPC0Z5XQCtC4z3RnrxsxTz86FhgOnjTt2m+o61zWe9QfHR
+Eelfd+RU+5uR3y1E0vpbI2Ll+0cdO93eP+jcdRa29ox5DaAwDGZ6SLDIE0K7eJd01dUtAPrG+N3L
+9o6Y467rlLKUzQQFmrcwT4oFAQgpQrRalN+On7/9wPH2sy67tkT2KisDLAJw3vWEw6dKevqD0CtS
+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
+				</image>
+				/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[1]/a[@href~'^https://www\.virginmedia\.c']/?/?/img[@alt='Virgin Media']
+			</item>
+			<item
+			name="MyVirginMedia"
+			id="10a84036-b834-47ee-baaa-8eabdc10cf7f"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']"
+			addcaps="unknown,webelement,atag"
+			refimgid="daf967a6-dad1-47c3-bf48-1317af26f22c">
+				/dom[@domain='www.virginmedia.com']//div[#'unified-header']/div/div/div[2]/div[1]/div[3]/ul/li[2]/a[@innertext='My Virgin Media    ']
+			</item>
+			<basepath>
+				/dom[@domain='www.virginmedia.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="VirginMediaMyVirginMedia"
+		id="b5654430-099b-438a-a9e1-096923495055"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		refpath="/dom[@domain='my.virginmedia.com']"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<item
+			name="ATagVirginMedia"
+			id="e6e03530-4f7b-4db4-87db-2f93a046c028"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='my.virginmedia.com']//h1[#'vm-logo']/a[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Virg']"
+			addcaps="unknown,webelement,atag"
+			refimgid="4c8a1e4c-d4d3-4bc5-9cc0-16ac3f9306ee">
+				/dom[@domain='my.virginmedia.com']//h1[#'vm-logo']/a[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Virg']
+			</item>
+			<basepath>
+				/dom[@domain='my.virginmedia.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="VirginMediaOfficialSiteInternet"
+		id="4f074a5d-b299-418e-aa74-581c78a1e9ea"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Virgin Media - Official Site - Internet Explorer']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ClientCaption"
+			id="2dab4340-f275-4e94-a303-48c81debeec3"
+			searchtimeout="30000ms"
+			capname="unknown"
+			refpath="/form[@title~'^Virgin\ Media\ -\ Official\ S']/element[@class='Client Caption']"
+			addcaps="unknown,nativewindow"
+			refimgid="1c7d84f9-4ae0-47ec-838a-afd39e370c81">
+				/form[@title~'^Virgin\ Media\ -\ Official\ S']/element[@class='Client Caption']
+			</item>
+			<basepath>
+				/form[@title~'^Virgin\ Media\ -\ Official\ S']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

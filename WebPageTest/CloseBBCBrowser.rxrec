@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.1"
+id="c202a318-2ec2-4a63-84a4-f30877f93ec4"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		CloseBBCBrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBBCBrowser"
+	namespace="WebPageTest"/>
+	<variables/>
+	<recorditems>
+		<mouseitem
+		enabled="True"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="1b14d93c-84ca-4058-bc23-69cf73b44e09"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="239"
+		sy="82"
+		loc="12;8">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="4776427b-6862-4dd1-9d3d-6125462fa87e">
+				<element
+				role="button"
+				prefcap="button"
+				capabilities="accessible"
+				flavor="msaa"
+				visible="True"
+				valid="True"
+				enabled="True"
+				hasfocus="False"
+				dontcache="False"
+				index="0"
+				rect="227,74,20,20"
+				snapElem="">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close Tab (Ctrl+W)
+					</attribute>
+					<attribute
+					name="accessibledefaultaction"
+					type="System.String">
+						Press
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						Close Tab (Ctrl+W)
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						Close Tab (Ctrl+W)
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						PushButton
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'^BBC\ Food\ -\ Recipes\ and\ in']//container[@class='TabBandClass']/?/?/tabpagelist[@accessiblename='Tab Row']/tabpage[@accessiblename~'^BBC\ Food\ -\ Recipes\ and\ in']/button[@accessiblename='Close Tab (Ctrl+W)']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="e0fbce68-0b76-4104-be76-3dd2ae33a8cd">
+				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
+e3iyvyDr/SigD//Z
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		enabled="False"
+		optional="False"
+		duration="500ms"
+		searchpropertyid="98eecd23-11bb-491f-a189-0fc9a80e0365"
+		action="Click"
+		button="Left"
+		movetime="300ms"
+		sx="1888"
+		sy="18"
+		loc="Center">
+			<comment/>
+			<bindings/>
+			<info
+			sourcename="Recorder"
+			id="4776427b-6862-4dd1-9d3d-6125462fa87e">
+				<path>
+					/form[@title~'^BBC\ Food\ -\ Recipes\ and\ in']//container[@class='TabBandClass']/?/?/tabpagelist[@accessiblename='Tab Row']/tabpage[@accessiblename~'^BBC\ Food\ -\ Recipes\ and\ in']/button[@accessiblename='Close Tab (Ctrl+W)']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	name="WebPageTestRepository"
+	id="9b12c0e6-0d54-4b6c-b4bb-cf4a6523cd68"
+	rxversion="6.1"
+	relativepath="WebPageTestRepository.rxrep">
+		<codegen
+		classname="WebPageTestRepository"
+		namespace="WebPageTest"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="44a44dba-0d21-424d-9680-11f589ae788d"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBBCBrowser.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

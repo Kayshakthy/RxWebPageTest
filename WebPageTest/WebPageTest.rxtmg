@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="WebPageTest"
+      id="def27f08-a4f8-4c77-bd6d-892df8ecca69"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="WebPageTest"
+      id="def27f08-a4f8-4c77-bd6d-892df8ecca69"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
